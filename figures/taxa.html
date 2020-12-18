@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="../vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/landing-page.min.css" rel="stylesheet">
+
+  <style>
+    div {
+      text-align: center
+    }
+    
+    img {
+      margin: 0;
+      padding: 0;
+      line-height: 0;
+    }
+  </style>
+
+</head>
+            
+            
+<body>
+  <div>
+    <br>
+    <h4 class="mb-5">Conservation actions plotted against taxa</h4>
+    <img src="taxa.png" style="width:50%; height: 50%; margin:0px">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form name="change">
+      <SELECT NAME="options" ONCHANGE="document.getElementById('figframe2').src = this.options[this.selectedIndex].value" id="selector">
+      <option value="">Select a group of conservation actions</option>
+      <option value="taxa/1_Education_awareness.png">Education & awareness</option>
+      <option value="taxa/2_Landwater_management.png">Land/water management</option>
+      <option value="taxa/3_Landwater_protection.png">Land/water protection</option>
+      <option value="taxa/4_Law_policy.png">Law & policy</option>
+      <option value="taxa/5_Livelihood_economic_other_incentives.png">Livelihoods, economic & other incentives</option>
+      <option value="taxa/6_Species_management.png">Species management</option>
+      <option value="taxa/7_Unclassified_Human_Dimensions.png">Unclassified human dimensions</option>
+      
+      </SELECT>
+    </form>
+    <br>
+    <img style="border: none; width: 50%; height: 50%; margin:0px" id="figframe2">
+  </div>
+  
+</body>
+</html>
