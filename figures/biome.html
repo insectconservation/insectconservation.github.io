@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .float-container {
+    border: 0px solid #fff;
+    padding: 0px;
+    }
+    
+    .float-child {
+        width: 50%;
+        float: left;
+        padding: 0px;
+        border: 0px solid red;
+    } 
+    </style>
+            </head>
+            
+            
+<body>
+<div class="float-container">
+  <div class="float-child">
+    <br>
+    <br>
+    <img src="biome.png">
+  </div>
+  
+  <div class="float-child">
+    <form name="change">
+      <SELECT NAME="options" ONCHANGE="document.getElementById('figframe2').src = this.options[this.selectedIndex].value">
+      <option value="">Select a conservation action</option>
+      <option value="biome/_1_Education_&_awareness_biome.png">Education & awareness</option>
+      <option value="biome/_2_Land_water_management_biome.png">Land/water management</option>
+      <option value="biome/_3_Land_water_protection_biome.png">Land/water protection</option>
+      
+      <option value="biome/_3_Land_water_protection_biome.png">Communicate with the public about the </option>
+      <option value="biome/_3_Land_water_protection_biome.png">Land/water protection</option>
+      <option value="biome/_3_Land_water_protection_biome.png">Land/water protection</option>
+      
+      </SELECT>
+    </form>
+    <br>
+    <img style="border: none; width: 100%; height: 100%;" id="figframe2">
+  </div>
+  
+  
+  <div>
+    <iframe id="iframe2" style="border: none; width:100%; height:1500px; scrolling:no" src="table.html"></iframe>
+  </div>
+</div>
+</body>
+</html>
