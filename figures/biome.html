@@ -13,6 +13,7 @@
   <!-- Custom styles for this template -->
   <link href="../css/landing-page.min.css" rel="stylesheet">
 
+
   <style>
     div {
       text-align: center
@@ -32,11 +33,13 @@
   <div>
     <br>
     <h4 class="mb-5">Conservation actions plotted against biome</h4>
-    <img src="biome.png" style="width:50%; height: 50%; margin:0px">
+    <img src="biome.png" style="width:100%; height: 100%; margin:0px">
     <br>
     <br>
     <br>
     <br>
+    <br>
+    <p class="lead mb-0">Select a group of conservation actions to crosstabulate against biome.</p>
     <br>
     <form name="change">
       <SELECT NAME="options" ONCHANGE="document.getElementById('figframe2').src = this.options[this.selectedIndex].value" id="selector">
@@ -52,7 +55,7 @@
       </SELECT>
     </form>
     <br>
-    <img style="border: none; width: 50%; height: 50%; margin:0px" id="figframe2">
+    <img style="border: none; width: 100%; height: 100%; margin:0px" id="figframe2">
   </div>
   
 </body>
